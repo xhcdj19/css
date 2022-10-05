@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 5.16</title>
+  <style type="text/css">
+    p { margin:0.9em 0em; }
+    @media handheld and (max-width: 480px),
+        screen and (max-device-width: 480px),
+        screen and (max-width: 480px)
+      {
+    div {
+        -webkit-column-count: 1;
+        column-count: 1; }
+      }
+    @media only screen and (min-width: 481px) and
+        (max-width: 1024px)
+      {
+    div {
+        -webkit-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 30px;
+        column-gap: 30px;
+        -webkit-column-rule: 1px outset black;
+        column-rule: 1px outset black; }
+        }
+      @media only screen and (min-width: 1025px) {
+     div {
+        -webkit-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 30px;
+        column-gap: 30px;
+        -webkit-column-rule: 1px outset black;
+        column-rule: 1px outset black;
+        }
+    }
+  </style>
+</head>
+
+<body>
+    <h3>Ejercicio 5.16</h3>
+
+  <header>
+    <h4>HTML</h4>
+  </header>
+    <div>
+      <p>HTML es un lenguaje de marcación que sirve para definir el contenido de las páginas web. Se compone en base a etiquetas, 
+        también llamadas marcas o tags, con las cuales conseguimos expresar las partes de un documento, cabecera, cuerpo, encabezados, 
+        párrafos, etc. En definitiva, el contenido de una página web.</p>
+      <p>HTML es el primer lenguaje que debe aprender cualquier persona interesada en construir un sitio web. A partir del HTML podemos 
+        pasar a muchos otros lenguajes interesantes que sirven para hacer cosas diversas y más avanzadas. Es decir, sea cual sea la 
+        tecnología, herramienta o gestor de contenido que nos hayamos propuesto aprender, o que tengamos que usar en nuestro día a día, 
+        HTML siempre será el lenguaje en el que toda web se construye y, por tanto, es de obligado conocimiento para todos.</p>
+      <p>Aprender HTML es sencillo. En pocos días o semanas serás capaz de entender y usar las etiquetas más comunes y componer documentos 
+        HTML (páginas web) correctas. Aquí encontrarás muchas ayudas para poder dar esos primeros pasos y luego profundizar en cualquier área que necesites.</p>
+      <footer>
+        <em>&copy; HTML.(n.d.). Desarrollo Web. Retrieved October 1, 2022, from https://desarrolloweb.com/home/html.</em>
+      </footer>
+   </div>
+ </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 5.12</title>
+  <style type="text/css">
+    p
+      { margin: 1em 0em; }
+      .multicolumns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -o-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        -o-column-gap: 50px;
+        column-gap: 50px;
+        -webkit-column-rule: 2px outset red;
+        -moz-column-rule: 2px outset red;
+        -o-column-rule: 2px outset red;
+        column-rule: 2px outset red;
+      }
+
+    .contenedor {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .texto-encima {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  </style>
+
+  <body>
+    <header>
+        <h4>HTML</h4>
+        <h5>Llegó el momento de hablar sobre HTML, 
+            el lenguaje con el que crean las páginas web.</h5>
+        <h6>De: Miguel Angel Alvarez</h6>
+    </header>
+
+    <div  class="multicolumns">
+        <p>HTML es el lenguaje con el que se define el contenido de las páginas web. Básicamente se 
+            trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que 
+            compondrán una página web, como imágenes, listas, vídeos, etc.</p>
+        <div class="contenedor">
+            <img src="html.png" width="100" height="100" />
+            <div class="texto-encima">Texto</div>
+        </div>
+    
+        <p>El HTML se creó en un principio con objetivos divulgativos de información con texto y algunas imágenes. 
+            No se pensó que llegara a ser utilizado para crear área de ocio y consulta con carácter multimedia 
+            (lo que es actualmente la web), de modo que, el HTML se creó sin dar respuesta a todos los posibles usos 
+            que se le iba a dar y a todos los colectivos de gente que lo utilizarían en un futuro. Sin embargo, pese a 
+            esta deficiente planificación, si que se han ido incorporando modificaciones con el tiempo, estos son los estándares 
+            del HTML. Numerosos estándares se han presentado ya. El HTML 4.01 es el último estándar a febrero de 2001. Actualización 
+            a mayo de 2005, en estos momentos está apunto de presentarse la versión 5 de HTML, de la que ya se tiene un borrador casi definitivo.</p>
+        <p>El HTML es un lenguaje de marcación de elementos para la creación de documentos hipertexto, muy fácil de aprender, lo que permite que 
+            cualquier persona, aunque no haya programado en la vida, pueda enfrentarse a la tarea de crear una web. HTML es fácil y pronto podremos 
+            dominar el lenguaje. Más adelante se conseguirán los resultados profesionales gracias a nuestras capacidades para el diseño y nuestra vena 
+            artista, así como a la incorporación de otros lenguajes para definir el formato con el que se tienen que presentar las webs, como CSS.</p>
+        <footer>
+            <em>&copy; Qué es HTML. (2001, January 1). Desarrollo Web. Retrieved October 2, 2022, 
+                from https://desarrolloweb.com/articulos/que-es-html.html</em>
+        </footer>
+    </div>
+  </body>
+</head>

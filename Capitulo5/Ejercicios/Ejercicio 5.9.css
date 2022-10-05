@@ -1,0 +1,12 @@
+img {
+    position: relative;
+    -webkit-animation: movingImage linear 10s 1s 8 normal;
+}
+
+@-webkit-keyframes movingImage {
+    0% {opacity: 1; left: 0px; top: 0px;}
+    25% {opacity: 1; left: 100px; top: 0px;}
+    50% {opacity: 1; left: 100px; top: 100px;}
+    75% {opacity: 1; left: 0px; top: 100px;}
+    100% {opacity: 1; left: 0px; top: 0px;}
+}

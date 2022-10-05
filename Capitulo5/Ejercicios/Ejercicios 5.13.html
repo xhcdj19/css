@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 5.13</title>
+  <link href="/Capitulo 5/Ejemplos/Ejemplos 5.16.html" rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    .flexbox {
+        width: 600px;
+        height: 420px;
+        display: -webkit-box;
+        display: box; 
+        -webkit-box-orient: vertical; 
+        box-orient: vertical;
+      }
+
+    .flexbox > div {
+        -webkit-transition: 1s ease-out; 
+        transition: 1s ease-out;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 120px;
+        margin: 10px -10px 10px 0px;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 10px 10px 10px dimgrey;
+      }
+
+    .flexbox > div:nth-child(1){ background-color: lightgrey; } 
+    .flexbox > div:nth-child(2){ background-color: lightgrey; } 
+    .flexbox > div:nth-child(3){ background-color: lightgrey; } 
+    .flexbox > div:nth-child(4){ background-color: lightgrey; }
+    
+    .flexbox > div:hover { 
+      width: 200px; color: white; font-weight: bold; } 
+    .flexbox > div:nth-child(1):hover { background-color: royalblue; } 
+    .flexbox > div:nth-child(2):hover { background-color: crimson; } 
+    .flexbox > div:nth-child(3):hover { background-color: crimson; } 
+    .flexbox > div:nth-child(4):hover { background-color: darkgreen; } 
+    p { height: 250px; overflow: hidden; font-family: "Rosario" }
+    </style>
+  </head>
+  <body>
+    <div class = "flexbox">
+      <div><img src = "GPP.jfif" alt = "Icono de buena práctica de programación" height="200" width="200">
+        <p>Las buenas prácticas de programación indican las técnicas que le ayudarán 
+            a producir programas más claros, comprensibles t fáciles de mantener.</p>
+      </div>
+      <div><img src = "EPT.jfif" alt = "Icono de tip para prevenir erroes" height="200" width="200">
+        <p>Los tips para prevenir errores contiene sugerencias para expner errores y eliminarlos
+            de sus programas; muchos describen aspectos de programación que evitan que los errores entren siquiera
+            a los programas.</p>
+      </div>
+      <div><img src = "" alt = "Icono de error común de programación" height="200" width="200">
+        <p>Los errores comunes de programación señalan los errores que comenten
+            los estudiantes con frecuencia. Estos errores comunes de programación
+            reducen la probabilidad de que usted cometa los mismos errores.</p>
+      </div>
+      <div><img src = "SEO.jfif" alt="Icono de observación de ingeniería de software" height="200" width="200">
+        <p>Las observaciones de ingeniería de software resaltan los asuntos de arquitectura y diseño 
+            que afectan en la construcción de sistemas de software, en especial
+            los sistemas de gran escala.</p>
+      </div>
+    </div>
+  </body>
+</html>

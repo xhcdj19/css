@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 5.11</title>
+    <style type = "text/css">
+      #cover
+      {
+        position: relative;
+        margin: 0 auto;
+      }
+      #cover img
+      {
+        position: absolute;
+        left: 0;
+        -webkit-transition: opacity 3s linear;
+        transition-timing-function: linear;
+        transition: opacity 3s linear;
+      }
+      #cover img.top:hover
+        { opacity:0;}
+    </style>
+  </head>
+
+  <body>
+    <div id = "cover">
+      <img class = "bottom" src = "cofre1.jpg" width="500" height="300" alt = "Cofre de perote">       
+      <img class = "top" src = "cofre2.jpg" width="500" height="300" alt = "Cofre de perote">
+      <img class = "top" src = "cofre3.jfif" width="500" height="300" alt = "Cofre de perote">
+      <img class = "top" src = "cofre4.jpg" width="500" height="300" alt = "Cofre de perote">
+      <img class = "top" src = "cofre5.jpg" width="500" height="300" alt = "Cofre de perote">
+    </div>
+  </body>
+</html>
